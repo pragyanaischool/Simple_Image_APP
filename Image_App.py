@@ -53,9 +53,8 @@ def main_loop():
     
     if apply_enhancement_filter_1:
         processed_image_1 = hist_equal(original_image)
-    
-    st.text("Original Image vs Hist Equal Image")
-    st.image([original_image, processed_image_1])
+        st.text("Original Image vs Hist Equal Image")
+        st.image([original_image, processed_image_1])
 
 if __name__ == '__main__':
     main_loop()
