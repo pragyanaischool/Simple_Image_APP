@@ -43,11 +43,14 @@ def main_loop():
     processed_image = blur_image(original_image, blur_rate)
     processed_image = brighten_image(processed_image, brightness_amount)
 
+    st.text("Original Image vs Processed Image")
+    st.image([original_image, processed_image]) 
+    
     if apply_enhancement_filter:
         processed_image = enhance_details(processed_image)
 
-    st.text("Original Image vs Processed Image")
-    st.image([original_image, processed_image])
+        st.text("Original Image vs Processed Image")
+        st.image([original_image, processed_image])
 
     apply_enhancement_filter_1 = st.sidebar.checkbox('Enhance HistEqualization') 
     
